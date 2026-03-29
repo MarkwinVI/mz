@@ -202,11 +202,13 @@ img[src="assets/map.png"] {
     color: #e9e9e9;
     letter-spacing: -0.012em;
     line-height: 1.1;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.45rem;
 }
 
 .hero__rsvp {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     padding: 0.7rem 3.2rem;
     border: 1.5px solid #e9e9e9;
     border-radius: 50px;
@@ -214,6 +216,7 @@ img[src="assets/map.png"] {
     text-decoration: none;
     font-family: var(--font-serif);
     font-size: clamp(0.85rem, 1.6vw, 1.1rem);
+    line-height: 1;
     letter-spacing: 0.011em;
     text-transform: none;
     transition: background 0.25s ease, color 0.25s ease;
@@ -335,7 +338,7 @@ img[src="assets/map.png"] {
 }
 
 .directions__container {
-    max-width: 900px;
+    max-width: 980px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -359,7 +362,8 @@ img[src="assets/map.png"] {
     letter-spacing: -0.012em;
     line-height: 1.3;
     margin-bottom: 0.85rem;
-    max-width: 38rem;
+    max-width: 48rem;
+    white-space: nowrap;
 }
 
 .directions__travel-time {
@@ -416,10 +420,6 @@ img[src="assets/map.png"] {
     border: 1px solid rgba(244, 241, 234, 0.35);
     border-radius: 22px;
     background: rgba(244, 241, 234, 0.1);
-}
-
-.directions__notice .directions__note + .directions__note {
-    margin-top: 0.65rem;
 }
 
 .directions__notice--compact {
@@ -712,6 +712,10 @@ img[src="assets/map.png"] {
 
     .directions {
         padding: 4rem 1.25rem;
+    }
+
+    .directions__address {
+        white-space: normal;
     }
 
     .directions__notice {
