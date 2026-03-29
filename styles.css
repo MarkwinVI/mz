@@ -37,8 +37,8 @@
 :root {
     --green:      #688236;
     --cream:      #f4f1ea;
-    --text-dark:  #3d3b2a;
-    --text-light: #f5f2eb;
+    --text-dark:  #3e4e3b;
+    --text-light: #e9e9e9;
     --rule-color: #c8c4b0;
 
     --font-script: 'Signature', cursive;
@@ -262,9 +262,9 @@ img[src="assets/map.png"] {
 
 .schedule__day-title {
     font-family: var(--font-serif);
-    font-size: 1.15rem;
-    font-weight: 700;
-    letter-spacing: 0.04em;
+    font-size: clamp(1rem, 2.42vw, 1.9rem);
+    font-weight: 400;
+    letter-spacing: -0.012em;
     text-align: center;
     margin-bottom: 1.4rem;
 }
@@ -284,13 +284,18 @@ img[src="assets/map.png"] {
     grid-template-columns: 5.5rem 1fr;
     gap: 0.75rem;
     padding: 1.1rem 0;
-    font-size: 1.05rem;
-    line-height: 1.5;
+    font-size: clamp(1rem, 2.42vw, 1.9rem);
+    line-height: 1.4;
     align-items: start;
 }
 
 .schedule__time {
-    font-weight: 500;
+    font-weight: 400;
+    letter-spacing: 0.011em;
+}
+
+.schedule__desc {
+    letter-spacing: -0.012em;
 }
 
 
@@ -310,9 +315,9 @@ img[src="assets/map.png"] {
 
 .directions__heading {
     font-family: var(--font-serif);
-    font-size: clamp(0.9rem, 2vw, 1.25rem);
-    font-weight: 600;
-    letter-spacing: 0.13em;
+    font-size: clamp(1rem, 2.42vw, 1.9rem);
+    font-weight: 400;
+    letter-spacing: -0.012em;
     text-align: center;
     margin-bottom: 3rem;
 }
@@ -324,20 +329,22 @@ img[src="assets/map.png"] {
 }
 
 .directions__venue-name {
-    font-size: 1.1rem;
-    font-weight: 700;
+    font-size: clamp(1rem, 2.42vw, 1.9rem);
+    font-weight: 400;
+    letter-spacing: -0.012em;
     margin-bottom: 0.9rem;
     line-height: 1.35;
 }
 
 .directions__venue-sub {
     display: block;
-    font-weight: 400;
-    font-size: 0.9rem;
+    font-size: clamp(0.95rem, 2.22vw, 1.75rem);
+    letter-spacing: -0.012em;
 }
 
 .directions__address {
-    font-size: 0.95rem;
+    font-size: clamp(0.95rem, 2.22vw, 1.75rem);
+    letter-spacing: -0.012em;
     line-height: 1.5;
     margin-bottom: 0.7rem;
 }
@@ -354,7 +361,8 @@ img[src="assets/map.png"] {
 .directions__link {
     color: var(--text-light);
     text-decoration: underline;
-    font-size: 0.95rem;
+    font-size: clamp(0.95rem, 2.22vw, 1.75rem);
+    letter-spacing: -0.012em;
 }
 
 .directions__link:hover {
@@ -371,9 +379,9 @@ img[src="assets/map.png"] {
 
 .directions__note {
     margin-top: 0.9rem;
-    font-size: 0.88rem;
-    font-style: italic;
-    line-height: 1.55;
+    font-size: clamp(0.95rem, 2.22vw, 1.75rem);
+    letter-spacing: -0.012em;
+    line-height: 1.5;
     opacity: 0.9;
 }
 
@@ -428,15 +436,16 @@ img[src="assets/map.png"] {
 
 .info__heading {
     font-family: var(--font-serif);
-    font-size: 0.95rem;
-    font-weight: 700;
-    letter-spacing: 0.13em;
+    font-size: clamp(1rem, 2.42vw, 1.9rem);
+    font-weight: 400;
+    letter-spacing: 0.011em;
     margin-bottom: 0.65rem;
 }
 
 .info__block p {
-    font-size: 1rem;
-    line-height: 1.65;
+    font-size: clamp(1rem, 2.42vw, 1.9rem);
+    letter-spacing: -0.012em;
+    line-height: 1.5;
 }
 
 
@@ -468,15 +477,16 @@ img[src="assets/map.png"] {
 
 .more-info__heading {
     font-family: var(--font-serif);
-    font-size: 0.95rem;
-    font-weight: 700;
-    letter-spacing: 0.13em;
+    font-size: clamp(1rem, 2.42vw, 1.9rem);
+    font-weight: 400;
+    letter-spacing: 0.011em;
     margin-bottom: 0.65rem;
 }
 
 .more-info__block p {
-    font-size: 1rem;
-    line-height: 1.65;
+    font-size: clamp(1rem, 2.42vw, 1.9rem);
+    letter-spacing: -0.012em;
+    line-height: 1.5;
 }
 
 .more-info__image-col {
@@ -533,10 +543,10 @@ img[src="assets/map.png"] {
     position: relative;
     z-index: 2;
     font-family: var(--font-serif);
-    font-size: clamp(1.5rem, 3.5vw, 3rem);
+    font-size: clamp(2rem, 4.64vw, 3.5rem);
     font-weight: 400;
     color: var(--text-light);
-    letter-spacing: 0.2em;
+    letter-spacing: -0.02em;
 }
 
 .farewell__bee {
