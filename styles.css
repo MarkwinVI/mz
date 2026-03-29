@@ -127,9 +127,9 @@ img[src="assets/map.png"] {
 /* ---- decorative assets ---- */
 .hero__plant-left {
     position: absolute;
-    left: 14%;
+    left: 18%;
     bottom: 0;
-    height: 92%;
+    height: 98%;
     width: auto;
     object-fit: contain;
     object-position: bottom left;
@@ -139,14 +139,7 @@ img[src="assets/map.png"] {
 }
 
 .hero__plant-right {
-    position: absolute;
-    right: 14%;
-    bottom: 0;
-    height: 62%;
-    width: auto;
-    z-index: 1;
-    pointer-events: none;
-    user-select: none;
+    display: none;
 }
 
 .hero__bee {
@@ -668,13 +661,8 @@ img[src="assets/map.png"] {
 
     /* Hero — scale down decorative images */
     .hero__plant-left {
-        height: 68%;
-        left: 4%;
-    }
-
-    .hero__plant-right {
-        height: 36%;
-        right: 4%;
+        height: 76%;
+        left: 11%;
     }
 
     .hero__bee--1 {
@@ -746,14 +734,8 @@ img[src="assets/map.png"] {
 @media (max-width: 480px) {
 
     .hero__plant-left {
-        height: 50%;
-        left: 3%;
-    }
-
-    .hero__plant-right {
-        height: 30%;
-        right: 5%;
-        bottom: 2%;
+        height: 60%;
+        left: 9%;
     }
 
     .hero__bee--1 {
