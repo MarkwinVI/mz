@@ -744,6 +744,10 @@ img[src="assets/map.png"] {
    ============================================================ */
 @media (max-width: 480px) {
 
+    .schedule {
+        padding: 4rem 1.6rem 4.25rem;
+    }
+
     .hero__plant-left {
         height: 60%;
         left: 9%;
@@ -767,6 +771,7 @@ img[src="assets/map.png"] {
 
     .schedule__event {
         grid-template-columns: 4rem 1fr;
+        gap: 0.45rem;
     }
 
     .directions {
