@@ -8,7 +8,7 @@
 }
 
 :root {
-    --green:      #7a8b56;
+    --green:      #688236;
     --cream:      #f4f1ea;
     --text-dark:  #3d3b2a;
     --text-light: #f5f2eb;
@@ -68,9 +68,9 @@ img[src="assets/map.png"] {
     position: absolute;
     inset: 0;
     z-index: 0;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.80' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)'/%3E%3C/svg%3E");
-    opacity: 0.09;
-    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E");
+    opacity: 0.18;
+    mix-blend-mode: soft-light;
     pointer-events: none;
 }
 
@@ -109,14 +109,14 @@ img[src="assets/map.png"] {
 }
 
 .hero__bee--1 {
-    width: clamp(80px, 10vw, 145px);
+    width: clamp(45px, 5.5vw, 80px);
     top: 22%;
     left: 24%;
     transform: rotate(-8deg);
 }
 
 .hero__bee--2 {
-    width: clamp(70px, 9vw, 130px);
+    width: clamp(40px, 5vw, 72px);
     top: 14%;
     right: 20%;
     transform: rotate(6deg);
@@ -485,12 +485,12 @@ img[src="assets/map.png"] {
     }
 
     .hero__bee--1 {
-        width: 70px;
+        width: 42px;
         left: 2%;
     }
 
     .hero__bee--2 {
-        width: 60px;
+        width: 38px;
         right: 2%;
     }
 
