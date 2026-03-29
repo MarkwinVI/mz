@@ -133,8 +133,6 @@ img[src="assets/map.png"] {
     width: auto;
     object-fit: contain;
     object-position: bottom left;
-    /* Black background → screen blend removes it */
-    mix-blend-mode: screen;
     z-index: 1;
     pointer-events: none;
     user-select: none;
@@ -162,14 +160,14 @@ img[src="assets/map.png"] {
     width: clamp(45px, 5.5vw, 80px);
     top: 22%;
     left: 24%;
-    transform: scaleX(-1) rotate(-8deg);
+    transform: rotate(-8deg);
 }
 
 .hero__bee--2 {
     width: clamp(40px, 5vw, 72px);
     top: 14%;
     right: 20%;
-    transform: scaleX(-1) rotate(6deg);
+    transform: rotate(6deg);
 }
 
 /* ---- centred text / button ---- */
@@ -335,6 +333,10 @@ img[src="assets/map.png"] {
 .directions__container {
     max-width: 900px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .directions__heading {
@@ -344,6 +346,7 @@ img[src="assets/map.png"] {
     letter-spacing: -0.012em;
     text-align: center;
     margin-bottom: 3rem;
+    width: 100%;
 }
 
 .directions__venue-name {
@@ -352,6 +355,7 @@ img[src="assets/map.png"] {
     letter-spacing: -0.012em;
     margin-bottom: 0.9rem;
     line-height: 1.35;
+    max-width: 34rem;
 }
 
 .directions__venue-sub {
@@ -365,15 +369,26 @@ img[src="assets/map.png"] {
     letter-spacing: -0.012em;
     line-height: 1.3;
     margin-bottom: 0.7rem;
+    max-width: 38rem;
 }
 
 .directions__icon {
     margin-right: 0.3rem;
 }
 
-.directions__links {
-    line-height: 1;
-    margin-bottom: 0.55rem;
+.directions__travel-time {
+    font-size: clamp(0.95rem, 2vw, 1.45rem);
+    line-height: 1.25;
+    opacity: 0.88;
+    margin-bottom: 1.4rem;
+}
+
+.directions__actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.85rem;
+    margin-bottom: 1.35rem;
 }
 
 .directions__link {
@@ -381,10 +396,26 @@ img[src="assets/map.png"] {
     text-decoration: underline;
     font-size: clamp(0.95rem, 2.22vw, 1.75rem);
     letter-spacing: -0.012em;
+    line-height: 1;
 }
 
 .directions__link:hover {
     opacity: 0.8;
+}
+
+.directions__link--button {
+    text-decoration: none;
+}
+
+.directions__actions .directions__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.35rem;
+    padding: 0.8rem 1.2rem;
+    border: 1px solid rgba(244, 241, 234, 0.42);
+    border-radius: 999px;
+    background: rgba(244, 241, 234, 0.06);
 }
 
 .directions__waze-icon {
@@ -403,17 +434,20 @@ img[src="assets/map.png"] {
 }
 
 .directions__notice {
-    margin-top: 1.6rem;
-    padding: 1.4rem 1.5rem;
+    margin-top: 0.2rem;
+    padding: 1.5rem 1.6rem;
     max-width: 44rem;
     border: 1px solid rgba(244, 241, 234, 0.35);
-    border-radius: 18px;
-    background: rgba(244, 241, 234, 0.08);
-    backdrop-filter: blur(2px);
+    border-radius: 22px;
+    background: rgba(244, 241, 234, 0.1);
 }
 
 .directions__notice .directions__note + .directions__note {
     margin-top: 0.65rem;
+}
+
+.directions__notice--compact {
+    max-width: 30rem;
 }
 
 .directions__link--notice {
@@ -437,12 +471,13 @@ img[src="assets/map.png"] {
     display: grid;
     grid-template-columns: 220px 1fr;
     gap: 3rem 4rem;
-    align-items: start;
+    align-items: center;
 }
 
 .info__image-col {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .info__flower {
@@ -488,7 +523,7 @@ img[src="assets/map.png"] {
     display: grid;
     grid-template-columns: 1fr 220px;
     gap: 3rem 4rem;
-    align-items: start;
+    align-items: center;
 }
 
 .more-info__block {
@@ -516,6 +551,7 @@ img[src="assets/map.png"] {
 .more-info__image-col {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .more-info__flower {
@@ -584,14 +620,14 @@ img[src="assets/map.png"] {
     width: clamp(40px, 5vw, 72px);
     top: 28%;
     right: 22%;
-    transform: scaleX(-1) rotate(-15deg);
+    transform: rotate(-15deg);
 }
 
 .farewell__bee--2 {
     width: clamp(35px, 4.5vw, 65px);
     bottom: 28%;
     left: 10%;
-    transform: scaleX(-1) rotate(10deg);
+    transform: rotate(10deg);
 }
 
 .farewell__right {
@@ -682,7 +718,6 @@ img[src="assets/map.png"] {
 
     .hero__plant-left {
         height: 55%;
-        opacity: 0.85;
         left: 0;
     }
 
