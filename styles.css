@@ -447,10 +447,16 @@ img[src="assets/map.png"] {
 
 .directions__notice {
     margin-top: auto;
-    padding: 1.1rem 1.15rem;
-    border: 1px solid rgba(244, 241, 234, 0.35);
-    border-radius: 18px;
-    background: rgba(244, 241, 234, 0.12);
+    padding: 0;
+}
+
+.directions__notice-label {
+    font-size: 0.86rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.76;
+    margin-bottom: 0.4rem;
 }
 
 .directions__note {
