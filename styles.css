@@ -579,13 +579,14 @@ img[src="assets/map.png"] {
    FAREWELL
    ============================================================ */
 .farewell {
-    display: flex;
-    min-height: 60vh;
+    display: grid;
+    grid-template-columns: 48% 52%;
+    min-height: 68vh;
 }
 
 .farewell__left {
     position: relative;
-    width: 50%;
+    width: 100%;
     background-color: var(--green);
     background-image:
         radial-gradient(ellipse 70% 55% at 8%  65%, rgba(160,185, 90,0.30) 0%, transparent 70%),
@@ -594,6 +595,7 @@ img[src="assets/map.png"] {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 3rem 2rem;
     overflow: hidden;
 }
 
@@ -618,10 +620,13 @@ img[src="assets/map.png"] {
     position: relative;
     z-index: 2;
     font-family: var(--font-serif);
-    font-size: clamp(2rem, 4.64vw, 3.5rem);
+    font-size: clamp(2.2rem, 4vw, 3.3rem);
     font-weight: 400;
     color: var(--text-light);
-    letter-spacing: -0.02em;
+    letter-spacing: -0.03em;
+    line-height: 1;
+    text-align: center;
+    transform: translateY(1.2rem);
 }
 
 .farewell__bee {
@@ -632,21 +637,21 @@ img[src="assets/map.png"] {
 }
 
 .farewell__bee--1 {
-    width: clamp(40px, 5vw, 72px);
-    top: 28%;
-    right: 22%;
-    transform: rotate(-15deg);
+    width: clamp(42px, 4.4vw, 66px);
+    top: 31%;
+    left: 42%;
+    transform: rotate(-8deg);
 }
 
 .farewell__bee--2 {
-    width: clamp(35px, 4.5vw, 65px);
-    bottom: 28%;
-    left: 10%;
-    transform: rotate(10deg);
+    width: clamp(38px, 4vw, 58px);
+    top: 44%;
+    left: 34%;
+    transform: rotate(14deg);
 }
 
 .farewell__right {
-    width: 50%;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -712,11 +717,12 @@ img[src="assets/map.png"] {
     .farewell {
         flex-direction: column;
         min-height: auto;
+        display: flex;
     }
 
     .farewell__left {
         width: 100%;
-        min-height: 50vw;
+        min-height: 58vw;
     }
 
     .farewell__right {
