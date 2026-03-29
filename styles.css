@@ -386,15 +386,13 @@ img[src="assets/map.png"] {
 }
 
 .directions__map-wrap {
-    grid-column: 1 / -1;
     display: flex;
+    align-items: flex-start;
     justify-content: center;
-    margin-top: 0.5rem;
 }
 
 .directions__map {
     width: 100%;
-    max-width: 520px;
     border-radius: 6px;
 }
 
@@ -611,10 +609,6 @@ img[src="assets/map.png"] {
     .directions__grid {
         grid-template-columns: 1fr;
         gap: 2.5rem;
-    }
-
-    .directions__map-wrap {
-        grid-column: 1;
     }
 
     /* Info — stack image above text */
