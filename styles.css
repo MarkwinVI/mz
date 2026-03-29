@@ -127,9 +127,9 @@ img[src="assets/map.png"] {
 /* ---- decorative assets ---- */
 .hero__plant-left {
     position: absolute;
-    left: 18%;
+    left: 14%;
     bottom: 0;
-    height: 98%;
+    height: 92%;
     width: auto;
     object-fit: contain;
     object-position: bottom left;
@@ -139,7 +139,14 @@ img[src="assets/map.png"] {
 }
 
 .hero__plant-right {
-    display: none;
+    position: absolute;
+    right: 14%;
+    bottom: 0;
+    height: 62%;
+    width: auto;
+    z-index: 1;
+    pointer-events: none;
+    user-select: none;
 }
 
 .hero__bee {
@@ -665,6 +672,10 @@ img[src="assets/map.png"] {
         left: 11%;
     }
 
+    .hero__plant-right {
+        display: none;
+    }
+
     .hero__bee--1 {
         left: 29%;
         top: 20%;
@@ -736,6 +747,10 @@ img[src="assets/map.png"] {
     .hero__plant-left {
         height: 60%;
         left: 9%;
+    }
+
+    .hero__plant-right {
+        display: none;
     }
 
     .hero__bee--1 {
