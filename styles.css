@@ -263,7 +263,7 @@ img[src="assets/map.png"] {
 .schedule__day-title {
     font-family: var(--font-serif);
     font-size: clamp(1rem, 2.42vw, 1.9rem);
-    font-weight: 400;
+    font-weight: 700;
     letter-spacing: -0.012em;
     text-align: center;
     margin-bottom: 1.4rem;
@@ -316,7 +316,7 @@ img[src="assets/map.png"] {
 .directions__heading {
     font-family: var(--font-serif);
     font-size: clamp(1rem, 2.42vw, 1.9rem);
-    font-weight: 400;
+    font-weight: 700;
     letter-spacing: -0.012em;
     text-align: center;
     margin-bottom: 3rem;
@@ -330,7 +330,7 @@ img[src="assets/map.png"] {
 
 .directions__venue-name {
     font-size: clamp(1rem, 2.42vw, 1.9rem);
-    font-weight: 400;
+    font-weight: 700;
     letter-spacing: -0.012em;
     margin-bottom: 0.9rem;
     line-height: 1.35;
@@ -437,7 +437,7 @@ img[src="assets/map.png"] {
 .info__heading {
     font-family: var(--font-serif);
     font-size: clamp(1rem, 2.42vw, 1.9rem);
-    font-weight: 400;
+    font-weight: 700;
     letter-spacing: 0.011em;
     margin-bottom: 0.65rem;
 }
@@ -478,7 +478,7 @@ img[src="assets/map.png"] {
 .more-info__heading {
     font-family: var(--font-serif);
     font-size: clamp(1rem, 2.42vw, 1.9rem);
-    font-weight: 400;
+    font-weight: 700;
     letter-spacing: 0.011em;
     margin-bottom: 0.65rem;
 }
