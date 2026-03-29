@@ -82,6 +82,7 @@
     <section class="directions">
         <div class="directions__container">
             <h2 class="directions__heading">Kā nokļūt svinību vietās?</h2>
+            <!-- venue + map side by side -->
             <div class="directions__grid">
                 <div class="directions__venue">
                     <h3 class="directions__venue-name">Laulības ceremonijas vieta — Mežotnes pils</h3>
@@ -99,17 +100,20 @@
                             <img src="assets/waze-icon.png" alt="" class="directions__waze-icon"> Waze norādes
                         </a>
                     </p>
-                    <p class="directions__note">
-                        Google maps bieži kā pirmo iesaka maršrutu pa grants ceļu —
-                        lai izvairītos, turpini braukt pa Bauskas šoseju līdz pat Jauncodei.
-                    </p>
-                    <p class="directions__note">
-                        Automašīnu var novietot bezmaksas stāvvietā pie pils.
-                    </p>
                 </div>
                 <div class="directions__map-wrap">
                     <img src="assets/map.png" alt="Maršruta karte" class="directions__map">
                 </div>
+            </div>
+            <!-- notes full-width below -->
+            <div class="directions__notes-full">
+                <p class="directions__note">
+                    Google maps bieži kā pirmo iesaka maršrutu pa grants ceļu —
+                    lai izvairītos, turpini braukt pa Bauskas šoseju līdz pat Jauncodei.
+                </p>
+                <p class="directions__note">
+                    Automašīnu var novietot bezmaksas stāvvietā pie pils.
+                </p>
             </div>
         </div>
     </section>
@@ -120,35 +124,34 @@
     <section class="directions">
         <div class="directions__container">
             <h2 class="directions__heading">Kā nokļūt svinību vietās?</h2>
-            <div class="directions__grid">
-                <div class="directions__venue">
-                    <h3 class="directions__venue-name">Svinību vieta — Brūveru klēts</h3>
-                    <p class="directions__address">
-                        <span class="directions__icon">&#x1F4CD;</span>
-                        Brūveri, Vilces pag., Jelgavas nov., LV-3026
-                    </p>
-                    <p class="directions__links">
-                        <a href="https://maps.app.goo.gl/CsqPGqqMkUxF4NUc7" class="directions__link" target="_blank" rel="noopener">
-                            <span class="directions__icon">&#x1F5FA;&#xFE0F;</span> Google maps norādes
-                        </a>
-                    </p>
-                    <p class="directions__links">
-                        <a href="https://www.waze.com/en-GB/live-map/directions/lv/jelgavas-novads/ziedkalne/bruveru-klets?to=place.ChIJ_VvzC5lH70YR6ovCaRvhgdU" class="directions__link" target="_blank" rel="noopener">
-                            <img src="assets/waze-icon.png" alt="" class="directions__waze-icon"> Waze norādes
-                        </a>
-                    </p>
-                </div>
-                <div class="directions__venue">
-                    <p class="directions__note">
-                        No Mežotnes pils līdz Brūveru klētij jābrauc aptuveni 50 minūtes.
-                    </p>
-                    <p class="directions__note">
-                        Kāzu pieturvietas nav plānotas.
-                    </p>
-                    <p class="directions__note">
-                        Automašīnu var novietot bezmaksas stāvvietā pie klēts.
-                    </p>
-                </div>
+            <!-- single column — all full width -->
+            <div class="directions__single">
+                <h3 class="directions__venue-name">Svinību vieta — Brūveru klēts</h3>
+                <p class="directions__address">
+                    <span class="directions__icon">&#x1F4CD;</span>
+                    Brūveri, Vilces pag., Jelgavas nov., LV-3026
+                </p>
+                <p class="directions__links">
+                    <a href="https://maps.app.goo.gl/CsqPGqqMkUxF4NUc7" class="directions__link" target="_blank" rel="noopener">
+                        <span class="directions__icon">&#x1F5FA;&#xFE0F;</span> Google maps norādes
+                    </a>
+                </p>
+                <p class="directions__links">
+                    <a href="https://www.waze.com/en-GB/live-map/directions/lv/jelgavas-novads/ziedkalne/bruveru-klets?to=place.ChIJ_VvzC5lH70YR6ovCaRvhgdU" class="directions__link" target="_blank" rel="noopener">
+                        <img src="assets/waze-icon.png" alt="" class="directions__waze-icon"> Waze norādes
+                    </a>
+                </p>
+            </div>
+            <div class="directions__notes-full">
+                <p class="directions__note">
+                    No Mežotnes pils līdz Brūveru klētij jābrauc aptuveni 50 minūtes.
+                </p>
+                <p class="directions__note">
+                    Kāzu pieturvietas nav plānotas.
+                </p>
+                <p class="directions__note">
+                    Automašīnu var novietot bezmaksas stāvvietā pie klēts.
+                </p>
             </div>
         </div>
     </section>
