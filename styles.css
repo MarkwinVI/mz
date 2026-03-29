@@ -495,6 +495,10 @@ img[src="assets/map.png"] {
     align-items: center;
 }
 
+.info__mobile-title {
+    display: none;
+}
+
 .info__flower {
     width: 100%;
     max-width: 220px;
@@ -665,22 +669,22 @@ img[src="assets/map.png"] {
     /* Hero — scale down decorative images */
     .hero__plant-left {
         height: 68%;
-        left: 8%;
+        left: 4%;
     }
 
     .hero__plant-right {
         height: 36%;
-        right: 8%;
+        right: 4%;
     }
 
     .hero__bee--1 {
-        left: 18%;
-        top: 26%;
+        left: 29%;
+        top: 20%;
     }
 
     .hero__bee--2 {
-        right: 18%;
-        top: 16%;
+        right: 28%;
+        top: 18%;
     }
 
     /* Info — stack image above text */
@@ -742,23 +746,26 @@ img[src="assets/map.png"] {
 @media (max-width: 480px) {
 
     .hero__plant-left {
-        height: 55%;
-        left: 0;
+        height: 50%;
+        left: 3%;
     }
 
     .hero__plant-right {
-        height: 28%;
-        right: 0;
+        height: 30%;
+        right: 5%;
+        bottom: 2%;
     }
 
     .hero__bee--1 {
-        width: 42px;
-        left: 2%;
+        width: 40px;
+        left: 35%;
+        top: 18%;
     }
 
     .hero__bee--2 {
-        width: 38px;
-        right: 2%;
+        width: 36px;
+        right: 33%;
+        top: 15%;
     }
 
     .schedule__event {
@@ -774,12 +781,34 @@ img[src="assets/map.png"] {
     }
 
     .directions__notice {
-        padding: 1.15rem 1rem;
-        border-radius: 14px;
+        padding: 0;
+        border-radius: 0;
     }
 
     .info,
     .more-info {
         padding: 4rem 1.25rem;
+    }
+
+    .info__image-col {
+        min-height: 0;
+    }
+
+    .info__flower {
+        display: none;
+    }
+
+    .info__mobile-title {
+        display: block;
+        font-family: var(--font-serif);
+        font-size: clamp(1.15rem, 7vw, 1.6rem);
+        font-weight: 700;
+        letter-spacing: 0.011em;
+        text-align: center;
+        color: var(--text-dark);
+    }
+
+    .more-info__image-col {
+        display: none;
     }
 }
