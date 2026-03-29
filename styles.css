@@ -321,6 +321,14 @@ img[src="assets/map.png"] {
     opacity: 0.8;
 }
 
+.directions__waze-icon {
+    display: inline;
+    width: 1.1em;
+    height: 1.1em;
+    vertical-align: middle;
+    object-fit: contain;
+}
+
 .directions__note {
     margin-top: 0.9rem;
     font-size: 0.88rem;
