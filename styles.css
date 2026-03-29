@@ -79,16 +79,12 @@ img[src="assets/map.png"] {
     width: auto;
     object-fit: contain;
     object-position: bottom right;
-    /* White background → multiply blend removes it */
-    mix-blend-mode: multiply;
     pointer-events: none;
     user-select: none;
 }
 
 .hero__bee {
     position: absolute;
-    /* White background → multiply blend removes it */
-    mix-blend-mode: multiply;
     pointer-events: none;
     user-select: none;
 }
