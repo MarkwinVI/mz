@@ -744,6 +744,18 @@ img[src="assets/map.png"] {
    ============================================================ */
 @media (max-width: 480px) {
 
+    .hero__names {
+        font-size: clamp(3.5rem, 14vw, 4.6rem);
+    }
+
+    .hero__date {
+        font-size: clamp(1.55rem, 6.2vw, 2rem);
+    }
+
+    .hero__rsvp {
+        font-size: 1rem;
+    }
+
     .schedule {
         padding: 4rem 1.6rem 4.25rem;
     }
@@ -772,10 +784,40 @@ img[src="assets/map.png"] {
     .schedule__event {
         grid-template-columns: 4rem 1fr;
         gap: 0.45rem;
+        font-size: 1.15rem;
+        line-height: 1.34;
+    }
+
+    .schedule__day-title {
+        font-size: 1.35rem;
     }
 
     .directions {
         padding: 4rem 1.25rem;
+    }
+
+    .directions__heading {
+        font-size: 1.55rem;
+    }
+
+    .directions__eyebrow,
+    .directions__detail dt,
+    .directions__notice-label {
+        font-size: 0.9rem;
+    }
+
+    .directions__title {
+        font-size: 1.5rem;
+    }
+
+    .directions__detail dd,
+    .directions__note {
+        font-size: 1.12rem;
+        line-height: 1.36;
+    }
+
+    .directions__link {
+        font-size: 1rem;
     }
 
     .directions__grid {
@@ -790,6 +832,17 @@ img[src="assets/map.png"] {
     .info,
     .more-info {
         padding: 4rem 1.25rem;
+    }
+
+    .info__heading,
+    .more-info__heading {
+        font-size: 1.35rem;
+    }
+
+    .info__block p,
+    .more-info__block p {
+        font-size: 1.12rem;
+        line-height: 1.36;
     }
 
     .info__image-col {
@@ -812,5 +865,9 @@ img[src="assets/map.png"] {
 
     .more-info__image-col {
         display: none;
+    }
+
+    .farewell__text {
+        font-size: 3rem;
     }
 }
