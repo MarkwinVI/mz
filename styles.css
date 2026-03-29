@@ -1,4 +1,31 @@
 /* ============================================================
+   SELF-HOSTED FONTS
+   ============================================================ */
+@font-face {
+    font-family: 'Signature';
+    src: url('assets/fonts/signature.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CormorantGaramond';
+    src: url('assets/fonts/cormorant-1.woff2') format('woff2');
+    font-weight: 400 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CormorantGaramond';
+    src: url('assets/fonts/cormorant-2.woff2') format('woff2');
+    font-weight: 400 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ============================================================
    RESET & ROOT VARIABLES
    ============================================================ */
 *, *::before, *::after {
@@ -14,8 +41,8 @@
     --text-light: #f5f2eb;
     --rule-color: #c8c4b0;
 
-    --font-script: 'Pinyon Script', cursive;
-    --font-serif:  'Cormorant Garamond', Georgia, serif;
+    --font-script: 'Signature', cursive;
+    --font-serif:  'CormorantGaramond', Georgia, serif;
 }
 
 html {
