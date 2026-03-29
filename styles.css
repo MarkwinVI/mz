@@ -744,6 +744,14 @@ img[src="assets/map.png"] {
    ============================================================ */
 @media (max-width: 480px) {
 
+    .schedule,
+    .info,
+    .more-info,
+    .farewell {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
     .hero__names {
         font-size: clamp(3.5rem, 14vw, 4.6rem);
     }
@@ -757,7 +765,8 @@ img[src="assets/map.png"] {
     }
 
     .schedule {
-        padding: 4rem 1.25rem 4.25rem;
+        padding-top: 4rem;
+        padding-bottom: 4.25rem;
     }
 
     .hero__plant-left {
@@ -793,7 +802,7 @@ img[src="assets/map.png"] {
     }
 
     .directions {
-        padding: 4rem 1.25rem;
+        padding: 4rem 1.5rem;
     }
 
     .directions__heading {
@@ -831,7 +840,8 @@ img[src="assets/map.png"] {
 
     .info,
     .more-info {
-        padding: 4rem 1.25rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
     }
 
     .info__heading,
