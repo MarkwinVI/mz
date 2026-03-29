@@ -527,8 +527,9 @@ img[src="assets/map.png"] {
    MORE INFO  (flowers · contacts · rsvp reminder)
    ============================================================ */
 .more-info {
-    background: var(--cream);
-    border-top: 1px solid #dedad0;
+    background: var(--green);
+    color: var(--text-light);
+    border-top: 1px solid rgba(244, 241, 234, 0.18);
     padding: 4.5rem 2rem;
 }
 
@@ -555,12 +556,14 @@ img[src="assets/map.png"] {
     font-weight: 700;
     letter-spacing: 0.011em;
     margin-bottom: 0.65rem;
+    color: var(--text-light);
 }
 
 .more-info__block p {
     font-size: clamp(1rem, 1.65vw, 1.35rem);
     letter-spacing: -0.012em;
     line-height: 1.3;
+    color: rgba(244, 241, 234, 0.94);
 }
 
 .more-info__image-col {
