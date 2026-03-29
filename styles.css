@@ -443,6 +443,89 @@ img[src="assets/map.png"] {
 
 
 /* ============================================================
+   FAREWELL
+   ============================================================ */
+.farewell {
+    display: flex;
+    min-height: 60vh;
+}
+
+.farewell__left {
+    position: relative;
+    width: 50%;
+    background-color: var(--green);
+    background-image:
+        radial-gradient(ellipse 70% 55% at 8%  65%, rgba(160,185, 90,0.30) 0%, transparent 70%),
+        radial-gradient(ellipse 55% 45% at 88% 20%, rgba( 90,115, 45,0.35) 0%, transparent 65%),
+        radial-gradient(ellipse 50% 40% at 55% 95%, rgba( 80,105, 38,0.28) 0%, transparent 60%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Same paper texture as hero */
+.farewell__left::before {
+    content: '';
+    position: absolute;
+    width: 200vmax;
+    height: 200vmax;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    z-index: 0;
+    background-image: url('assets/paper-texture.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+.farewell__text {
+    position: relative;
+    z-index: 2;
+    font-family: var(--font-serif);
+    font-size: clamp(1.5rem, 3.5vw, 3rem);
+    font-weight: 400;
+    color: var(--text-light);
+    letter-spacing: 0.2em;
+}
+
+.farewell__bee {
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+    user-select: none;
+}
+
+.farewell__bee--1 {
+    width: clamp(40px, 5vw, 72px);
+    top: 28%;
+    right: 22%;
+    transform: rotate(-15deg);
+}
+
+.farewell__bee--2 {
+    width: clamp(35px, 4.5vw, 65px);
+    bottom: 28%;
+    left: 10%;
+    transform: rotate(10deg);
+}
+
+.farewell__right {
+    width: 50%;
+    overflow: hidden;
+}
+
+.farewell__photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+/* ============================================================
    RESPONSIVE — tablet / mobile  (max 768 px)
    ============================================================ */
 @media (max-width: 768px) {
@@ -498,6 +581,22 @@ img[src="assets/map.png"] {
 
     .more-info__flower {
         max-width: 160px;
+    }
+
+    /* Farewell — stack vertically on mobile */
+    .farewell {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .farewell__left {
+        width: 100%;
+        min-height: 50vw;
+    }
+
+    .farewell__right {
+        width: 100%;
+        min-height: 60vw;
     }
 }
 
