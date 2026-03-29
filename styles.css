@@ -181,6 +181,9 @@ img[src="assets/map.png"] {
     flex-direction: column;
     align-items: center;
     gap: 1.6rem;
+    max-width: 900px;
+    width: 100%;
+    padding: 0 2rem;
 }
 
 .hero__names {
@@ -270,7 +273,7 @@ img[src="assets/map.png"] {
 }
 
 .schedule__container {
-    max-width: 660px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -284,7 +287,9 @@ img[src="assets/map.png"] {
     font-weight: 700;
     letter-spacing: -0.012em;
     text-align: center;
-    margin-bottom: 1.4rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--rule-color);
+    margin-bottom: 0;
 }
 
 .schedule__events {
@@ -308,11 +313,12 @@ img[src="assets/map.png"] {
 }
 
 .schedule__time {
-    font-weight: 400;
+    font-weight: 700;
     letter-spacing: 0.011em;
 }
 
 .schedule__desc {
+    font-weight: 300;
     letter-spacing: -0.012em;
 }
 
@@ -338,12 +344,6 @@ img[src="assets/map.png"] {
     letter-spacing: -0.012em;
     text-align: center;
     margin-bottom: 3rem;
-}
-
-.directions__grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2.5rem 3.5rem;
 }
 
 .directions__venue-name {
@@ -413,22 +413,12 @@ img[src="assets/map.png"] {
     border-radius: 6px;
 }
 
-/* Full-width notes block below the grid */
-.directions__notes-full {
+.directions__note-map {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
     margin-top: 2rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid rgba(233, 233, 233, 0.3);
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-}
-
-/* Single-column layout for Brūveru klēts */
-.directions__single {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    max-width: 60%;
 }
 
 
@@ -640,14 +630,9 @@ img[src="assets/map.png"] {
         top: 16%;
     }
 
-    /* Directions — single column */
-    .directions__grid {
+    /* Directions — stack note-map on mobile */
+    .directions__note-map {
         grid-template-columns: 1fr;
-        gap: 2.5rem;
-    }
-
-    .directions__single {
-        max-width: 100%;
     }
 
     /* Info — stack image above text */
