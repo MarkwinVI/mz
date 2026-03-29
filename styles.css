@@ -66,13 +66,16 @@ img[src="assets/map.png"] {
 .hero::before {
     content: '';
     position: absolute;
-    inset: -50%;
+    width: 200vmax;
+    height: 200vmax;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
     z-index: 0;
     background-image: url('assets/paper-texture.jpg');
     background-size: cover;
     background-position: center;
     opacity: 0.3;
-    transform: rotate(90deg);
     pointer-events: none;
 }
 
