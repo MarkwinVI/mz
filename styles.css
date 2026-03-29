@@ -580,29 +580,18 @@ img[src="assets/map.png"] {
    ============================================================ */
 .farewell {
     display: grid;
-    grid-template-columns: minmax(20rem, 0.95fr) minmax(24rem, 1.05fr);
-    min-height: 68vh;
-    background: var(--cream);
-}
-
-.farewell__left {
-    position: relative;
-    width: 100%;
-    background-color: var(--green);
-    background-image:
-        radial-gradient(ellipse 70% 55% at 8%  65%, rgba(160,185, 90,0.30) 0%, transparent 70%),
-        radial-gradient(ellipse 55% 45% at 88% 20%, rgba( 90,115, 45,0.35) 0%, transparent 65%),
-        radial-gradient(ellipse 50% 40% at 55% 95%, rgba( 80,105, 38,0.28) 0%, transparent 60%);
-    display: flex;
+    grid-template-columns: minmax(18rem, 26rem) 1fr;
+    gap: clamp(3rem, 8vw, 8rem);
     align-items: center;
     justify-content: center;
-    min-height: 100%;
-    padding: 3rem 2rem;
+    min-height: 72vh;
+    background: var(--cream);
+    padding: 4rem clamp(1.5rem, 6vw, 6rem);
+    position: relative;
     overflow: hidden;
 }
 
-/* Same paper texture as hero */
-.farewell__left::before {
+.farewell::before {
     content: '';
     position: absolute;
     width: 200vmax;
@@ -618,57 +607,50 @@ img[src="assets/map.png"] {
     pointer-events: none;
 }
 
+.farewell__left,
+.farewell__right {
+    position: relative;
+    z-index: 1;
+}
+
+.farewell__left {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100%;
+}
+
 .farewell__text {
     position: relative;
-    z-index: 2;
     font-family: var(--font-serif);
-    font-size: clamp(2.2rem, 3.6vw, 3.3rem);
+    font-size: clamp(2.6rem, 4.6vw, 4.8rem);
     font-weight: 400;
-    color: var(--text-light);
-    letter-spacing: -0.03em;
-    line-height: 1;
-    text-align: center;
+    color: #414141;
+    letter-spacing: -0.04em;
+    line-height: 0.95;
+    text-align: left;
 }
 
 .farewell__bee {
-    position: absolute;
-    z-index: 1;
-    pointer-events: none;
-    user-select: none;
-}
-
-.farewell__bee--1 {
-    width: clamp(42px, 3.6vw, 56px);
-    top: 32%;
-    left: calc(50% - 6.6rem);
-    transform: rotate(-9deg);
-}
-
-.farewell__bee--2 {
-    width: clamp(38px, 3.3vw, 50px);
-    top: 28%;
-    left: calc(50% + 2.9rem);
-    transform: rotate(10deg);
+    display: none;
 }
 
 .farewell__right {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 2.5rem;
-    overflow: hidden;
+    justify-content: flex-end;
 }
 
 .farewell__photo {
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-    max-height: min(78vh, 48rem);
-    object-fit: contain;
+    width: min(100%, 24rem);
+    aspect-ratio: 1 / 1.28;
+    object-fit: cover;
     object-position: center;
     display: block;
     transform: rotate(180deg);
+    box-shadow: 0 18px 40px rgba(80, 70, 50, 0.08);
 }
 
 /* ============================================================
@@ -723,33 +705,29 @@ img[src="assets/map.png"] {
 
     .farewell {
         grid-template-columns: 1fr;
+        gap: 2rem;
         min-height: auto;
+        padding: 3rem 1.25rem 4rem;
     }
 
     .farewell__left {
         width: 100%;
-        min-height: 15rem;
-        padding: 3.25rem 1.5rem 3.5rem;
+        min-height: auto;
+        justify-content: center;
     }
 
     .farewell__right {
         width: 100%;
-        min-height: auto;
-        padding: 1.5rem 1.25rem 0;
-    }
-
-    .farewell__bee--1 {
-        top: 25%;
-        left: calc(50% - 4.6rem);
-    }
-
-    .farewell__bee--2 {
-        top: 22%;
-        left: calc(50% + 1.6rem);
+        justify-content: center;
+        order: -1;
     }
 
     .farewell__photo {
-        max-height: 78vh;
+        width: min(100%, 23rem);
+    }
+
+    .farewell__text {
+        text-align: center;
     }
 }
 
