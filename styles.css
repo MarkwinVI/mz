@@ -373,9 +373,6 @@ img[src="assets/map.png"] {
     gap: 1.1rem;
     min-height: 100%;
     padding: 1.8rem;
-    border: 1px solid rgba(244, 241, 234, 0.3);
-    border-radius: 26px;
-    background: rgba(244, 241, 234, 0.08);
 }
 
 .directions__eyebrow {
