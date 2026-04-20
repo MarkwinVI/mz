@@ -187,6 +187,7 @@ img[src="assets/map.png"] {
     max-width: 720px;
     width: 100%;
     padding: 0 2rem;
+    transform: translateY(clamp(1rem, 4vh, 2.4rem));
 }
 
 .hero__names {
@@ -513,6 +514,14 @@ img[src="assets/map.png"] {
     margin-bottom: 2.15rem;
 }
 
+.info__block--mobile-flowers {
+    display: none;
+}
+
+.info__block--dress {
+    margin-bottom: 0;
+}
+
 .info__block:last-child {
     margin-bottom: 0;
 }
@@ -698,14 +707,26 @@ img[src="assets/map.png"] {
         max-width: 180px;
     }
 
+    .info__block--mobile-flowers {
+        display: block;
+    }
+
+    .info__block--dress {
+        margin-bottom: 2.15rem;
+    }
+
     /* More info — stack image above text on mobile */
     .more-info__container {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
 
+    .more-info__block--flowers {
+        display: none;
+    }
+
     .more-info__image-col {
-        order: -1;
+        display: none;
     }
 
     .more-info__flower {
