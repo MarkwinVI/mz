@@ -515,7 +515,7 @@ img[src="assets/map.png"] {
 }
 
 .info__block--mobile-flowers {
-    display: none;
+    display: none !important;
 }
 
 .info__block--dress {
@@ -708,7 +708,7 @@ img[src="assets/map.png"] {
     }
 
     .info__block--mobile-flowers {
-        display: block;
+        display: block !important;
     }
 
     .info__block--dress {
@@ -722,7 +722,7 @@ img[src="assets/map.png"] {
     }
 
     .more-info__block--flowers {
-        display: none;
+        display: none !important;
     }
 
     .more-info__image-col {
